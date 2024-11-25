@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
     "dev": "nodemon index.js",
-    "start": "node dist/index.js", 
+    "start": "node index.js",              // une seule définition
+    "build": "prisma generate",            // ajoutez cette ligne pour Prisma
     "seed": "node prisma/seed.js"
-  },
+},
   "prisma": {
     "seed": "node prisma/seed.js"
   },
